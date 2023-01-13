@@ -1,14 +1,18 @@
 <?php
+include_once __DIR__ . '/Genre.php';
 
 class Movie {
 private $title;
 private $duration;
 private $genre;
 
-    public function __construct($_title, $_duration, $_genre) {
+    public function __construct($_title, $_duration, Genre $_genre = null) {
         $this->setTitle($_title);
         $this->setDuration($_duration);
-        $this->setGenre($_genre);
+
+        if ($_genre) {
+            $this->setGenre($_genre);
+        }
     }
 
     public function setTitle($_title) {
@@ -29,11 +33,12 @@ private $genre;
         return $this->duration;
     }
 
-    public function setGenre($_genre) {
+    public function setGenre(Genre $_genre) {
         $this->genre = $_genre;
+    
         return $this;
     }
-    
+
     public function getGenre() {
         return $this->genre;
     }
