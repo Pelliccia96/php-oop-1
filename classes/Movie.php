@@ -17,7 +17,6 @@ private $genre;
 
     public function setTitle($_title) {
         $this->title = $_title;
-        return $this;
     }
 
     public function getTitle() {
@@ -26,7 +25,6 @@ private $genre;
 
     public function setDuration($_duration) {
         $this->duration = $_duration;
-        return $this;
     }
     
     public function getDuration() {
@@ -35,8 +33,6 @@ private $genre;
 
     public function setGenre(Genre $_genre) {
         $this->genre = $_genre;
-    
-        return $this;
     }
 
     public function getGenre() {

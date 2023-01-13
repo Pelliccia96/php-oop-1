@@ -1,37 +1,34 @@
 <?php
 
 class Genre {
-private $genre;
+private $name;
 private $description;
 private $vote;
 
-    public function __construct($_genre, $_description, $_vote) {
-        $this->setTitle($_genre);
-        $this->setDuration($_description);
+    public function __construct($_name, $_description, $_vote) {
+        $this->setTitle($_name);
+        $this->setDescription($_description);
         $this->setGenre($_vote);
     }
 
     public function setTitle($_genre) {
-        $this->genre = $_genre;
-        return $this;
+        $this->name = $_genre;
     }
 
     public function getTitle() {
-        return $this->genre;
+        return $this->name;
     }
 
-    public function setDuration($_description) {
+    public function setDescription($_description) {
         $this->description = $_description;
-        return $this;
     }
     
-    public function getDuration() {
+    public function getDescription() {
         return $this->description;
     }
 
     public function setGenre($_vote) {
         $this->vote = $_vote;
-        return $this;
     }
     
     public function getGenre() {
