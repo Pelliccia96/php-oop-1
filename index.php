@@ -11,12 +11,12 @@ $movie_2 = new Movie("Titolo film 2", "01:45:00", $genre_2);
 var_dump($movie_1, $movie_2);
 
 echo '<pre>';
-echo '<h3>Film Completo 1</h3>'.'<br />';
+echo '<h3>Film Completo 1</h3>'.'<br/>';
 print_r($movie_1);
 echo '</pre>';
 
 echo '<pre>';
-echo '<h3>Film Completo 2</h3>'.'<br />';
+echo '<h3>Film Completo 2</h3>'.'<br/>';
 print_r($movie_2);
 echo '</pre>';
 
